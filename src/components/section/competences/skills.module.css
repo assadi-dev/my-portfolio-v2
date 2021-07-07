@@ -1,0 +1,163 @@
+*{
+     box-sizing: border-box;
+}
+
+.presentation
+{
+   
+    padding: 2rem 3rem 3rem;
+}
+
+.titreSection
+{
+    font-weight: 700 ;
+    padding-left: 1.5rem;
+    font-size: 2rem;
+    position: relative;
+    left:0;
+ 
+}
+
+.titleContain
+{
+    border-left:#54B689 solid 0.5rem ;
+}
+
+.intro a
+{
+    text-decoration: none;
+    color: #54B689;
+}
+
+.intro 
+{
+    margin-bottom: 3rem;
+}
+
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    /*-right: 0;
+    margin-left: 0;*/
+    padding-right: -15px;
+    padding-left: -15px;
+    margin: 0;
+
+}
+
+.Skill_item
+{
+    position: relative;
+    flex: 0 0 25%;
+    max-width: 25%;
+    margin-bottom: 2rem;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: left;
+   
+  
+}
+
+.item_inner
+{
+   
+    width: 100%;
+}
+
+.item_inner svg
+{
+    margin-left: .75rem;
+    margin-right: 0.75rem;
+
+  
+}
+
+
+
+.item_title
+{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+.item_icon
+{
+    font-size: 2rem;
+}
+
+
+/**Icone Color******/
+
+.javascript
+{
+    color:#F1DE4F;
+}
+
+.html
+{
+   color: #DE6E3C;
+}
+
+.css{
+    color:#53A7DC;
+
+}
+
+.react
+{
+    color:#62D4FA;
+}
+
+.php
+{
+   color: #777BAF;
+}
+
+@media screen and (max-width:992px)
+{
+    .presentation
+    {
+        
+        padding-left: 1rem;
+        padding-right: 1rem;
+        
+    }
+
+    .Skill_item
+    {
+        flex:0 0 50%;
+        max-width: 50%;      
+
+    }
+
+    .titreSection
+    {
+        font-size: 1.5rem;
+    }
+
+
+
+
+    .item_desc,.item_title,.intro
+    {
+        font-size: 0.8rem;
+    }
+
+    .item_icon
+    {
+        font-size: 1.5rem;
+    }
+
+
+
+
+
+
+}
+
+@media screen and (max-width:556px)
+{
+    
+}
