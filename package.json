@@ -40,7 +40,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "install-client": "npm install",
-    "heroku-postbuild": "npm install-client && npm run build"
+    "heroku-postbuild": "npm run install-client && npm run build"
   },
   "engines": {
     "node": "15.x"
