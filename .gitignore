@@ -12,7 +12,6 @@
 # production
 /build
 package-lock.json
-yarn.lock
 _redirects
 
 # misc
