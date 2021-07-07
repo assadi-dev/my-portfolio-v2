@@ -26,7 +26,7 @@ module.exports.sendMail = (req, res) => {
         to: to, // list of receivers
         subject: subject, // Subject line
         text: `Vous avez reçus un email de la part de ${from_name}, ${body}`, // plain text body
-        html: `<p>Bonjour Mr Assadi,</p> <p>Vous avez reçus un email de la part de ${from_name},</p> ${message}`, // html body
+        html: `<p>Bonjour Mr Assadi,</p> <p>Email : ${from}</p>  <p>Vous avez reçus un email de la part de ${from_name},</p> ${message}`, // html body
       },
 
       (error, info) => {
