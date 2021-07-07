@@ -40,7 +40,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "install-client": "yarn install",
-    "heroku-postbuild": "yarn install-client && yarn build"
+    "heroku-postbuild": "yarn install-client && yarn run build"
   },
   "engines": {
     "node": "15.x"
