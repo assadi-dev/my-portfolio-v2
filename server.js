@@ -28,6 +28,7 @@ app.use(express.static("build"));
 app.post("/sendmail", sendMail);
 
 app.get("/*", (_, res) => {
+  l;
   res.sendFile(path.join(__dirname, "build/index.html"));
 });
 
