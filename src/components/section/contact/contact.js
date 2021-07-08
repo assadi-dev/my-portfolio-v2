@@ -62,7 +62,9 @@ const Contact = () => {
       // refTextMessage.current.textContent = "Envoie en cours";
       setTexButon("Envoie en cours");
       axios
-        .post(`/sendmail`, datafield)
+        .post(`/sendmail`, datafield, {
+          headers: { "Content-Type": "application/json" },
+        })
         .then(() => {
           setSendState(success);
           setTexButon("Message envoyé");
