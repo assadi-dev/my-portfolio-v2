@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const corsOptions = {
-  origin: "*",
+  origin: "https://assadi-portfolio.herokuapp.com",
   credentials: true,
   allowedHeaders: ["sessionId", "Content-Type", "Accept", "Authorization"],
   exposedHeaders: ["sessionId"],
