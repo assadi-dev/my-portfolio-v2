@@ -3,7 +3,7 @@ const nodemailer = require("nodemailer");
 module.exports.sendMail = (req, res) => {
   const credential = {
     host: process.env.SMTP,
-    port: process.env.PORT_SMTPp,
+    port: process.env.PORT_SMTP,
     secure: false,
     auth: {
       user: process.env.IDENTIFIANT,
