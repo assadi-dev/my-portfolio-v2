@@ -4,7 +4,7 @@ module.exports.sendMail = (req, res) => {
   const credential = {
     host: process.env.SMTP,
     port: process.env.PORT_SMTP,
-    secure: false,
+    secure: process.env.SECURE,
     auth: {
       user: process.env.IDENTIFIANT,
       pass: process.env.PASSWORD,
