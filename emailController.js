@@ -2,9 +2,7 @@ const nodemailer = require("nodemailer");
 
 module.exports.sendMail = (req, res) => {
   const credential = {
-    host: process.env.SMTP,
-    port: process.env.PORT_SMTP,
-    secure: true,
+    service: "gmail",
     auth: {
       user: process.env.IDENTIFIANT,
       pass: process.env.PASSWORD,
