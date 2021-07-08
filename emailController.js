@@ -4,8 +4,12 @@ module.exports.sendMail = (req, res) => {
   const credential = {
     service: "gmail",
     auth: {
+      type: "OAuth2",
       user: process.env.IDENTIFIANT,
       pass: process.env.PASSWORD,
+      clientId: process.env.OAUTH_CLIENTID,
+      clientSecret: process.env.OAUTH_CLIENT_SECRET,
+      refreshToken: process.env.OAUTH_REFRESH_TOKEN,
     },
     tls: {
       // do not fail on invalid certs
