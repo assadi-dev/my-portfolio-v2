@@ -9,6 +9,10 @@ module.exports.sendMail = (req, res) => {
       user: process.env.IDENTIFIANT,
       pass: process.env.PASSWORD,
     },
+    tls: {
+      // do not fail on invalid certs
+      rejectUnauthorized: false,
+    },
   };
 
   const { from_name, from_email, sujet, message } = req.body;
