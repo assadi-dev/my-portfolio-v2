@@ -13,14 +13,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const corsOptions = {
-  origin: "*",
+  origin: process.env.CLIENT_URL,
   credentials: true,
-  allowedHeaders: [
-    "sessionId",
-    "Content-Type",
-    "X-Requested-With,content-type",
-  ],
-  exposedHeaders: ["Content-Type"],
+  allowedHeaders: ["sessionId", "Content-Type", "Accept", "Authorization"],
+  exposedHeaders: ["sessionId"],
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   preflightContinue: false,
 };
