@@ -32,7 +32,7 @@ module.exports.sendMail = (req, res) => {
       (error, info) => {
         if (error) {
           console.log(error);
-          res.status(500).json({ message: error });
+          res.status(500).json(error);
         } else {
           res.status(200).json({ message: `Email reçus`, info: info.response });
         }
@@ -40,7 +40,7 @@ module.exports.sendMail = (req, res) => {
     );
   } catch (error) {
     console.log(error);
-    res.staus(500).json({ message: error });
+    res.staus(500).json(error);
     t;
   }
 };
