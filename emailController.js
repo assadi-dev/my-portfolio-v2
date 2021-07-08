@@ -14,8 +14,8 @@ module.exports.sendMail = (req, res) => {
   };
 
   const { from_name, from_email, sujet, message } = req.body;
-  const to = "assadi.halifa@gmail.com";
-  const from = from_email;
+  const to = `<assadi.halifa@gmail.com>;`;
+  const from = `${from_name} <${from_email}>;`;
   const subject = sujet;
   const body = message;
 
