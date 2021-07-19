@@ -3,20 +3,22 @@ import pic2 from "../../img/Capture1.PNG";
 import pic3 from "../../img/Capture3.JPG";
 import pic4 from "../../img/Capture4.JPG";
 import pic5 from "../../img/Capture5.png";
+import pic6 from "../../img/Capture6.png";
 
 const projectData = [
   {
     id: 1,
-    name: "Good-Job",
+    name: "My-cms-prospect",
     categorie: "Application web",
     description:
-      "Voici un site d'annonce d'offre d'emploie, avec possibilité de postulé directement au site + envoie de CV, possibilité au recruteur de posté une annonce et aussi,et répondre aux candidatures . Ce site est réaliser avec le framework symfony pour le backend et react js coté front, gestion des donnée avec postgreSQL,récuperations des donné en Api rest from scratch",
+      "Cette application permet de d'enregistré et suivre ses prospections , pour ce projet j'ai utilisé le template react-black-dashboard by Creative Tim pour l'interface, afin de me concentré sur les fonctionnalité, technos utilisé pour la partie front react ,redux , back-end symfony 5 , postegreSqQL pour la base de donnée.",
     annee: "2021",
-    picture: pic5,
-    mois: "fevrier",
-    github: "https://github.com/assadi-dev/good_job",
-    link: "http://good-job-web-app.herokuapp.com/",
+    picture: pic6,
+    mois: "juin",
+    github: "https://github.com/assadi-dev/my-cms-prospect",
+    link: "http://my-cms-prospect.herokuapp.com/admin/tableau-de-board/",
   },
+
   {
     id: 2,
     name: "Twitch Clone",
@@ -61,6 +63,18 @@ const projectData = [
       "Appli web réaliseé avec le framework react js. Cette application permet de visionner la propagation du covid-19 dans le monde à l'aide de l'API https://covid19.mathdro.id/api",
     github: "https://github.com/assadi-dev/covid-tracker",
     link: "https://project-covid-tracker.netlify.app/",
+  },
+  {
+    id: 6,
+    name: "Good-Job",
+    categorie: "Application web",
+    description:
+      "Voici un site d'annonce d'offre d'emploie, avec possibilité de postulé directement au site + envoie de CV, possibilité au recruteur de posté une annonce et aussi,et répondre aux candidatures . Ce site est réaliser avec le framework symfony pour le backend et react js coté front, gestion des donnée avec postgreSQL,récuperations des donné en Api rest from scratch",
+    annee: "2021",
+    picture: pic5,
+    mois: "fevrier",
+    github: "https://github.com/assadi-dev/good_job",
+    link: "http://good-job-web-app.herokuapp.com/",
   },
 ];
 
