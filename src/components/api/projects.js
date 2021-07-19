@@ -11,7 +11,7 @@ const projectData = [
     name: "My-cms-prospect",
     categorie: "Application web",
     description:
-      "Cette application permet de d'enregistré et suivre ses prospections , pour ce projet j'ai utilisé le template react-black-dashboard by Creative Tim pour l'interface, afin de me concentré sur les fonctionnalité, technos utilisé pour la partie front react ,redux , back-end symfony 5 , postegreSqQL pour la base de donnée.",
+      "Cette application permet de d'enregistré et suivre ses prospections , pour ce projet j'ai utilisé le template react-black-dashboard by Creative Tim pour l'interface, afin de me concentré sur les fonctionnalité, technos utilisé pour la partie front react ,redux , back-end symfony 5 , postegreSqQL pour la base de donnée. identifiant pour tester l'application test@gmail.com, mot de passe: 1234",
     annee: "2021",
     picture: pic6,
     mois: "juin",
