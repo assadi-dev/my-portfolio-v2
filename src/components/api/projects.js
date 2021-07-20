@@ -38,7 +38,7 @@ const projectData = [
     categorie: "Application web",
     annee: "2020",
     description:
-      "Appli web réaliseé avec le framework Symfony  4 et MDBoostrap, site one page du serveur GTA V RP LS Paradise, afin de permettre au joueurs inscrit de voir leurs données stockées dans la base de donnée,Refonte du site avec symfony 5 pour la partie back-end  et react pour la partie front-end ",
+      "Appli web réaliseé avec le framework Symfony  4 et MDBoostrap, site one page du serveur GTA V RP LS Paradise, afin de permettre au joueurs inscrit de voir leurs données stockées dans la base de donnée,Refonte du site avec symfony 5 pour la partie back-end  et react pour la partie front-end et sans framework css.",
     github: "https://github.com/assadi-dev/lS-paradiseV2",
     link: "https://ls-paradise-react-version.herokuapp.com/",
   },
