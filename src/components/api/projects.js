@@ -7,6 +7,7 @@ import pic6 from "../../img/Capture6.png";
 import pic7 from "../../img/Capture7.png";
 import pic8 from "../../img/Capture8.png";
 import pic9 from "../../img/Capture9.png";
+import pic10 from "../../img/Capture10.png";
 
 const projectData = [{
         id: 1,
@@ -104,6 +105,17 @@ const projectData = [{
         mois: "novembre",
         github: "https://github.com/assadi-dev/covid-19-tracker-v2",
         link: "https://covide-19-tracker-by-assadi.netlify.app/",
+    },
+    {
+        id: 10,
+        name: "Paper, Scissors FrontendMentor",
+        categorie: "Application web",
+        description: "Petit jeu de papier pierre feuille ciseaux, réaliser en react js, ceci est un challenge provenant du site Frontend mentor. ",
+        annee: "2021",
+        picture: pic10,
+        mois: "décembre",
+        github: "https://github.com/assadi-dev/rock-paper-scissors",
+        link: "https://friendly-mccarthy-0a49a6.netlify.app/",
     },
 ];
 
