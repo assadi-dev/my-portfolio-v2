@@ -87,7 +87,7 @@ const projectData = [{
         id: 10,
         name: "Paper, Scissors FrontendMentor",
         categorie: "Application web",
-        description: "Petit jeu de papier pierre feuille ciseaux, réaliser en react js, ceci est un challenge provenant du site Frontend mentor. ",
+        description: "Petit jeu de papier pierre feuille ciseaux, réaliser en react js et styled components pour le style, ceci est un challenge provenant du site Frontend mentor. ",
         annee: "2021",
         picture: pic10,
         mois: "décembre",
