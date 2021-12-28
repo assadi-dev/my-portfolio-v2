@@ -5,14 +5,10 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { Provider as ReduxProvider } from "react-redux";
 import { applyMiddleware, createStore } from "redux";
-import { composeWithDevTools } from "redux-devtools-extension";
 import thunk from "redux-thunk";
 import RootReducer from "./redux/RootReducers";
 
-const store = createStore(
-  RootReducer,
-  composeWithDevTools(applyMiddleware(thunk))
-);
+const store = createStore(RootReducer, applyMiddleware(thunk));
 
 ReactDOM.render(
   <React.StrictMode>
