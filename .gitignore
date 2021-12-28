@@ -5,6 +5,7 @@
 client/node_modules
 /.pnp
 .pnp.js
+/package-lock.json
 
 # testing
 /coverage
@@ -21,5 +22,5 @@ client/.env.local
 .env.development.local
 .env.test.local
 .env.production.local
-.env
+/.env
 
