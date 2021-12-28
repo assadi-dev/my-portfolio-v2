@@ -1,0 +1,24 @@
+.linkContainer {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.linkContainer li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.open {
+    height: 100%;
+}
+
+@media screen and (max-width: 998px) {
+    .linkContainer {
+        flex-direction: column;
+        font-size: 1.5em;
+        letter-spacing: 1px;
+    }
+    .linkContainer li {
+        margin: 1rem 0;
+    }
+}

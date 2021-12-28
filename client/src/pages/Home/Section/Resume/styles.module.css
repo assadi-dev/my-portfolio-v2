@@ -1,0 +1,60 @@
+/**Tab Resume ***/
+
+.tab_header {
+    margin-top: 2.2rem;
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2rem 6rem;
+}
+
+.items {
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    min-height: 70px;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.items::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: var(--gradient-text);
+    bottom: 0px;
+    transition: all 0.4s ease-in;
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+}
+
+.items:hover {
+    color: var(--color-subtext);
+}
+
+.selected {
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.4s ease-in;
+}
+
+.selected::before {
+    animation: lineGrow 0.3s ease-in forwards;
+    -webkit-animation: lineGrow 0.3s ease-in forwards;
+}
+
+@keyframes lineGrow {
+    100% {
+        width: 100%;
+    }
+}

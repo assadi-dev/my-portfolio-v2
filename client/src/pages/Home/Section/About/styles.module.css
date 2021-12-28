@@ -1,0 +1,76 @@
+.picture img {
+    width: 100%;
+    object-fit: contain;
+    filter: opacity(60%);
+}
+
+.bgImageContainer {
+    background: radial-gradient(circle at 3% 25%, #002853 0, #040c18 100%);
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    box-shadow: 1px 1px 10px 0px var(--color-subtext);
+    opacity: 0;
+}
+
+.picture {
+    background: none;
+    width: 100%;
+    padding: 1rem;
+    border: 10px solid;
+    border-image-slice: 1 !important;
+    border-width: 5px;
+    border-image-source: var(--gradient-text);
+}
+
+.presentation {
+    flex: 0.5;
+    overflow: hidden;
+}
+
+.title {
+    background: var(--color-subtext);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-background-clop: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 1.8rem;
+}
+
+.text {
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
+    color: var(--color-text);
+}
+
+.border_picture {
+    position: relative;
+    flex: 0.3;
+    padding: 0.3rem;
+}
+
+@keyframes moveGradient {
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text {
+        font-size: 1rem;
+    }
+    .border_picture {
+        margin-bottom: 2rem;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .border_picture {
+        margin-bottom: 2rem;
+        padding: 0 2.5rem 2.5rem;
+    }
+}

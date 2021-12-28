@@ -1,0 +1,88 @@
+    .left {
+        flex: 0.5
+    }
+    
+    .right {
+        flex: 0.5
+    }
+    
+    .title {
+        font-weight: 800;
+        font-size: 62px;
+        line-height: 75px;
+        letter-spacing: -.04em;
+        background: var(--gradient-text);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-background-clop: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .presentation {
+        font-size: 35px;
+        margin-top: 1.5rem;
+        line-height: 27px;
+        color: var(--color-text);
+    }
+    
+    .stack {
+        background: var(--gradient-text);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-background-clop: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 900;
+        font-size: 2.5rem
+    }
+    
+    .button {
+        background: var(--gradient-text);
+        transition: all 0.4s ease-in !important;
+        -webkit-transition: all 0.4s ease-in !important;
+        -moz-transition: all 0.4s ease-in !important;
+        -ms-transition: all 0.4s ease-in !important;
+        -o-transition: all 0.4s ease-in !important;
+    }
+    
+    .button:active {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+    }
+    
+    .socialBtn {
+        margin: 1rem 0;
+        padding: 1rem;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .title {
+            font-size: 42px
+        }
+        .left {
+            flex: 1;
+        }
+        .right {
+            display: none;
+        }
+        .presentation,
+        .title,
+        .stack {
+            margin: 0;
+            text-align: center;
+        }
+        .stack,
+        .presentation {
+            font-size: 1.2rem;
+        }
+        .button {
+            font-size: 1rem;
+        }
+        .socialBtn {
+            justify-content: center;
+        }
+    }

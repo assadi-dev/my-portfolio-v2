@@ -1,0 +1,24 @@
+.gradient-div {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+}
+
+.border-gradient-purple {
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+
+.gradient-div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -5px;
+    /* !importanté */
+    border-radius: inherit;
+    /* !importanté */
+    background: linear-gradient(to right, red, orange);
+}
