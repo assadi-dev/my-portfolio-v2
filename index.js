@@ -29,7 +29,7 @@ app.get("/*", (_, res) => {
     res.sendFile(path.join(__dirname, "/client/build/index.html"));
 });
 //app.use("/uploads", express.static(path.join(__dirname, "/uploads")));
-const port = process.env.PORT || 6500;
+const PORT = process.env.PORT || 6500;
 const server = http.createServer(app);
 
 server.listen(PORT, () => {
