@@ -29,9 +29,9 @@ app.get("/*", (_, res) => {
     res.sendFile(path.join(__dirname, "/client/build/index.html"));
 });
 //app.use("/uploads", express.static(path.join(__dirname, "/uploads")));
-
+const port = process.env.PORT || 6500;
 const server = http.createServer(app);
 
-server.listen(process.env.PORT, () => {
-    console.log("connected on port " + process.env.PORT);
+server.listen(PORT, () => {
+    console.log("connected on port " + PORT);
 });
