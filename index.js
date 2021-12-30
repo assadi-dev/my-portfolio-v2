@@ -5,7 +5,6 @@ const cors = require("cors");
 const path = require("path");
 const projectRoute = require("./server/routes/projectRouter");
 const userRouter = require("./server/routes/userRouter");
-require("./server/db/connectDB");
 
 const app = express();
 
