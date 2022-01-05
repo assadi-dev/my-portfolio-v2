@@ -120,13 +120,23 @@ const ProjectPage = () => {
               </InfoProject>
               <Separator className="separator" />
               <LinkProject className="textAnimation">
-                <ButtonRedirect href={github} alt="GitHub-link" target="_blank">
+                <ButtonRedirect
+                  href={github}
+                  alt="GitHub-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Icontext>
                     <FontAwesomeIcon icon={["fab", "github"]} />
                   </Icontext>
                   Github
                 </ButtonRedirect>
-                <ButtonRedirect href={link} alt="Project-link" target="_blank">
+                <ButtonRedirect
+                  href={link}
+                  alt="Project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Icontext>
                     <FontAwesomeIcon icon={["fas", "link"]} />
                   </Icontext>
