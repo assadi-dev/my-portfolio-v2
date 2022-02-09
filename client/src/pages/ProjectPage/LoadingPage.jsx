@@ -17,7 +17,6 @@ const Container = styled.div`
 const LoadingPage = () => {
   return (
     <Container>
-      {" "}
       <CircularProgress sx={{ color: "var(--color-text)" }} size="5rem" />
     </Container>
   );

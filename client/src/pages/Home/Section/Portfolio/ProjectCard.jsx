@@ -81,6 +81,7 @@ const ProjectCard = ({
   category,
   postedAt,
   preview,
+  tags,
   ...props
 }) => {
   library.add(fas);
@@ -103,7 +104,9 @@ const ProjectCard = ({
       <Link to={`/project/${slug}`}>
         <Overlay>
           <ProjectName hover={hover}>{name}</ProjectName>
-          <CategoryName hover={hover}>{category}</CategoryName>
+          {tags.map((tag) => (
+            <CategoryName hover={hover}>{tag}</CategoryName>
+          ))}
 
           <ShowProjectButton hover={hover}>
             <FontAwesomeIcon icon={["fas", "eye"]} size="1x" />

@@ -96,18 +96,23 @@ const Portfolio = () => {
             <FilterItem onClick={() => setFilterKey("")}>
               Afficher Tout
             </FilterItem>
-            <FilterItem onClick={() => setFilterKey("web")}>
-              Application Web
+            <FilterItem onClick={() => setFilterKey("javascript")}>
+              Javascript
             </FilterItem>
-            <FilterItem onClick={() => setFilterKey("mobile")}>
-              Application Mobile
+            <FilterItem onClick={() => setFilterKey("node js")}>
+              Node JS
+            </FilterItem>
+            <FilterItem onClick={() => setFilterKey("react")}>REACT</FilterItem>
+            <FilterItem onClick={() => setFilterKey("php")}>PHP</FilterItem>
+            <FilterItem onClick={() => setFilterKey("symfony")}>
+              SYMFONY
             </FilterItem>
           </ProjectFilter>
 
           <ProjectContainer ref={el}>
             {collections
               .filter((p) =>
-                p.category.toLowerCase().includes(filterKey.toLowerCase())
+                p.tags.toLowerCase().includes(filterKey.toLowerCase())
               )
               .map((project, index) => (
                 <ProjectCard
@@ -118,6 +123,7 @@ const Portfolio = () => {
                   category={project.category}
                   postedAt={project.postedAt}
                   preview={project.preview}
+                  tags={project.tags.split(",")}
                   className="project-box"
                 />
               ))}

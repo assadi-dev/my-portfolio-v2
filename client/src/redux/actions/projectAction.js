@@ -15,7 +15,17 @@ export const get_client_project = () => {
                         preview: `${api_link}${p.preview.url}`,
                     };
                 });
+                data.map((p) => {
+                    let array = [];
+                    p.tags.map((t) => {
+                        array.push(t.name.trim());
+                        p.tags = array.join(",");
+                        return t;
+                    });
+                    return p;
+                });
                 let cleanData = data.sort((a, b) => (a.postedAt > b.postedAt ? -1 : 1));
+
                 dispatch({ type: GET_CLIENT_PROJECT, payload: cleanData });
             });
         } catch (error) {}
