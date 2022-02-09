@@ -43,17 +43,25 @@ const ProjectFilter = styled.div`
   padding: 1rem;
   width: 100%;
   overflow: hidden;
+  flex-wrap: wrap;
+
   @media (max-width: 550px) {
     text-align: center;
   }
 `;
 
 const FilterItem = styled.span`
-  font-weight: 800;
+  font-weight: 600;
   font-size: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 1rem;
   cursor: pointer;
+
+  border-radius: 5px;
+  padding: 0.5rem;
+  :hover {
+    background-color: var(--color-text);
+    color: var(--color-bg);
+  }
 `;
 
 const Portfolio = () => {
@@ -102,10 +110,9 @@ const Portfolio = () => {
             <FilterItem onClick={() => setFilterKey("node js")}>
               Node JS
             </FilterItem>
-            <FilterItem onClick={() => setFilterKey("react")}>REACT</FilterItem>
-            <FilterItem onClick={() => setFilterKey("php")}>PHP</FilterItem>
+            <FilterItem onClick={() => setFilterKey("react")}>React</FilterItem>
             <FilterItem onClick={() => setFilterKey("symfony")}>
-              SYMFONY
+              Symfony
             </FilterItem>
           </ProjectFilter>
 
