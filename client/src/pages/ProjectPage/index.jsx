@@ -34,6 +34,7 @@ import rehypeMathjax from "rehype-mathjax";
 import remarkMath from "remark-math";
 import remarkParse from "remark-parse";
 import rehypeStringify from "rehype-stringify";
+import remarkRehype from "remark-rehype";
 
 const ProjectPage = () => {
   const { slug } = useParams();
@@ -110,7 +111,14 @@ const ProjectPage = () => {
               <Separator className="separator" />
               <DescriptionTex className="textAnimation">
                 <ReactMarkdown
-                  remarkPlugins={[gfm, remarkHtml, remarkMath, remarkParse]}
+                  allowDangerousHtml={true}
+                  remarkPlugins={[
+                    gfm,
+                    remarkHtml,
+                    remarkMath,
+                    remarkParse,
+                    remarkRehype,
+                  ]}
                   rehypePlugins={[
                     rehypeHighlight,
                     rehypeMathjax,
