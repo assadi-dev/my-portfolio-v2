@@ -29,6 +29,11 @@ import { Helmet } from "react-helmet";
 import ReactMarkdown from "react-markdown";
 import rehypeHighlight from "rehype-highlight";
 import gfm from "remark-gfm";
+import remarkHtml from "remark-html";
+import rehypeMathjax from "rehype-mathjax";
+import remarkMath from "remark-math";
+import remarkParse from "remark-parse";
+import rehypeStringify from "rehype-stringify";
 
 const ProjectPage = () => {
   const { slug } = useParams();
@@ -105,8 +110,12 @@ const ProjectPage = () => {
               <Separator className="separator" />
               <DescriptionTex className="textAnimation">
                 <ReactMarkdown
-                  remarkPlugins={[gfm]}
-                  rehypePlugins={[rehypeHighlight]}
+                  remarkPlugins={[gfm, remarkHtml, remarkMath, remarkParse]}
+                  rehypePlugins={[
+                    rehypeHighlight,
+                    rehypeMathjax,
+                    rehypeStringify,
+                  ]}
                 >
                   {description}
                 </ReactMarkdown>
