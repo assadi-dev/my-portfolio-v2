@@ -26,6 +26,9 @@ import LoadingPage from "./LoadingPage";
 import { useSelector, useDispatch } from "react-redux";
 import { get_client_current_project } from "../../redux/actions/projectAction";
 import { Helmet } from "react-helmet";
+import ReactMarkdown from "react-markdown";
+import rehypeHighlight from "rehype-highlight";
+import gfm from "remark-gfm";
 
 const ProjectPage = () => {
   const { slug } = useParams();
@@ -101,9 +104,12 @@ const ProjectPage = () => {
             <DescriptionProject>
               <Separator className="separator" />
               <DescriptionTex className="textAnimation">
-                {description}
+                <ReactMarkdown rehypePlugins={[rehypeHighlight]}>
+                  {description}
+                </ReactMarkdown>
               </DescriptionTex>
             </DescriptionProject>
+
             <DescriptionProject>
               <Separator className="separator" />
               <InfoProject className="textAnimation">
