@@ -104,7 +104,10 @@ const ProjectPage = () => {
             <DescriptionProject>
               <Separator className="separator" />
               <DescriptionTex className="textAnimation">
-                <ReactMarkdown rehypePlugins={[rehypeHighlight]}>
+                <ReactMarkdown
+                  remarkPlugins={[gfm]}
+                  rehypePlugins={[rehypeHighlight]}
+                >
                   {description}
                 </ReactMarkdown>
               </DescriptionTex>
